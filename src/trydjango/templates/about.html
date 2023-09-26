@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content%}
+    <h1>Hello World</h1>
+
+    <p>This is the about page</p>
+
+
+    <p>
+        {{ my_text }}
+        {{ my_number }}
+        {{ my_list }}
+    </p>
+
+    <ul>
+    {% for my_item in my_list %}
+        {% if my_item == 312 %}
+            <li>{{ forloop.counter }} - {{ my_item|add:22 }}</li>
+        {% else %}
+            <li>{{ forloop.counter }} - {{ my_item }}</li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    {% endblock %}
+</body>
+</html>

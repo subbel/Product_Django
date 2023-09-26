@@ -1,0 +1,1 @@
+https://dockerize.io/guides/python-django-guide#:~:text=To%20build%20your%20container%2C%20you,t%20python%2Ddjango%2Dapp%20.
